@@ -1,0 +1,43 @@
+#board {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+/* Custom styles for better responsiveness and layout */
+.container-fluid {
+    padding: 20px;
+}
+
+.chessboard {
+    width: 100%; /* Make the chessboard responsive */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the chessboard */
+}
+
+#moveHistory {
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    max-height: 400px; /* Set a maximum height for the scoresheet */
+}
+
+#moveHistory table {
+     width: 100%;
+}
+
+/* Responsive adjustments using Bootstrap grid system */
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        align-items: flex-start;
+    }
+    .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+     .col-md-4.center-board {
+        display: flex;
+        justify-content: center;
+    }
+
+}
