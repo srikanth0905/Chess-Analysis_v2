@@ -22,7 +22,21 @@ const cg = Chessground (document.getElementById("board"), {
     highlight: {
         lastMove: true,
         check: true
-    }
+    },
+    drawable: {
+        enabled: true,
+        visible: true,
+        defaultSnapToValidMove: true
+    },
+    style: {
+        pieces: (piece) => {
+            const color = piece[0] === 'w' ? 'w' : 'b';
+            const type = piece[1].toUpperCase();
+            const path = `piece/${color}${type}.svg`;
+            console.log('Piece path: ',path);
+            return path;
+        }
+    }        
 });
 
 // Initialize Stockfish
