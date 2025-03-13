@@ -2,8 +2,8 @@ import { Chess } from "https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/ch
 import { Chessground } from "chessground";
 
 // importing Chessground assets
-import "../../node_modules/chessground/assets/chessground.base.css";
-import "../../node_modules/chessground/assets/chessground.brown.css";
+import "/styles/chessground.base.css";
+import "/styles/chessground.brown.css";
 
 // Initialize Chess.js
 const chess = new Chess();
