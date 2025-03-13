@@ -1,13 +1,13 @@
 {
   "name": "chess-analysis_v2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chess Analysis Application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",
     "build": "vite build",
-    "start": "node server/server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
