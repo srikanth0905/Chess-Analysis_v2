@@ -1,5 +1,5 @@
 import { Chess } from "https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js";
-import { Chessground } from "./chessground/dist/chessground.js";
+import { Chessground } from "chessground";
 
 
 // Initialize Chess.js
